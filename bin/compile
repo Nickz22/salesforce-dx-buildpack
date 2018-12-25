@@ -62,7 +62,7 @@ debug "SFDX_PACKAGE_NAME: $SFDX_PACKAGE_NAME"
 if [ "$CI" == "true" ]; then
   # CI doesn't include HEROKU_APP_NAME or SOURCE_VERSION (if so, we'd name 
   # similiarly to RA), so set it to a default value
-  TARGET_SCRATCH_ORG_ALIAS="ci-$HEROKU_TEST_RUN_COMMIT_VERSION"
+  TARGET_SCRATCH_ORG_ALIAS="scratchy"
   # REVIEWME: ideally we'd reference run-id (eg #86) instead of 
   # HEROKU_TEST_RUN_ID which is an internal hash that isn't exposed (AFAICT)
   TARGET_SCRATCH_ORG_NAME="Pipeline CI: $HEROKU_TEST_RUN_BRANCH $HEROKU_TEST_RUN_ID"
