@@ -70,7 +70,7 @@ else
   # HEROKU_APP_NAME available via required=true in app.json
   APP_NAME=${HEROKU_APP_NAME:-$SOURCE_VERSION}
   # adding hard-coded scratch org name to attempt to reuse existing scratch org for testing
-  TARGET_SCRATCH_ORG_ALIAS="test-ksvakkgpqail@example.com"
+  TARGET_SCRATCH_ORG_ALIAS="scratchy"
   TARGET_SCRATCH_ORG_NAME="Pipeline Review App: $APP_NAME"
 fi
 
